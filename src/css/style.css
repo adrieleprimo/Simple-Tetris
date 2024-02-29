@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c192c;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img{
+    margin-left: 95px;
+    filter: blur(50px);
+    filter: brightness(200%);
+    filter: contrast(400%);
+    filter: grayscale(100%);
+    filter: opacity(120%);
+    filter: saturate(200%);
+    filter: sepia(100%);
+    filter: hue-rotate(110deg);
+    filter: drop-shadow(5px 5px 5px #857CD1);
+    transition: 2s;
+    animation: blink 2s steps(1, end) infinite;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 80%;
+    }
+    50% {
+      opacity: 90%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+#game-board {
+    width:  400px;
+    height: 655px;
+}
